@@ -22,9 +22,6 @@ RUN set -ex; \
 ENV PATH $PATH:/usr/lib/postgresql/$PG_MAJOR/bin
 
 ENV PGDATA /var/lib/postgresql/mathesar
-VOLUME /etc/postgresql/
-VOLUME /var/lib/postgresql/
-
 
 # We set the default STOPSIGNAL to SIGINT, which corresponds to what PostgreSQL
 # calls "Fast Shutdown mode" wherein new connections are disallowed and any
